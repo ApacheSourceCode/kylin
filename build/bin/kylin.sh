@@ -61,7 +61,7 @@ function retrieveDependency() {
         verbose "hdp_version is ${hdp_version}"
     fi
 
-    source ${KYLIN_HOME}/bin/prepare_hadoop_dependency.sh
+    source ${KYLIN_HOME}/bin/prepare-hadoop-dependency.sh
 
     tomcat_root=${dir}/../tomcat
     export tomcat_root
@@ -140,7 +140,6 @@ function prepareFairScheduler() {
   <pool name="query_pushdown">
     <schedulingMode>FAIR</schedulingMode>
     <weight>1</weight>
-    <minShare>0</minShare>
   </pool>
   <pool name="heavy_tasks">
     <schedulingMode>FAIR</schedulingMode>
@@ -155,7 +154,6 @@ function prepareFairScheduler() {
   <pool name="vip_tasks">
     <schedulingMode>FAIR</schedulingMode>
     <weight>15</weight>
-    <minShare>0</minShare>
   </pool>
 </allocations>
 EOL
