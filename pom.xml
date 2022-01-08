@@ -30,7 +30,7 @@
   <groupId>org.apache.kylin</groupId>
   <artifactId>kylin</artifactId>
   <packaging>pom</packaging>
-  <version>4.0.0-SNAPSHOT</version>
+  <version>4.0.2-SNAPSHOT</version>
 
   <name>Apache Kylin</name>
   <url>http://kylin.apache.org</url>
@@ -257,7 +257,7 @@
       <dependency>
         <groupId>org.apache.kylin</groupId>
         <artifactId>kylin-shaded-guava</artifactId>
-        <version>${project.version}</version>
+        <version>3.1.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kylin</groupId>
@@ -1527,7 +1527,7 @@
   </build>
 
   <modules>
-    <module>external</module>
+   <!-- <module>external</module>-->
     <module>core-common</module>
     <module>core-metadata</module>
 <!--    <module>core-dictionary</module>-->
@@ -2010,7 +2010,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore/>
+                        <ignore />
                       </action>
                     </pluginExecution>
                   </pluginExecutions>
